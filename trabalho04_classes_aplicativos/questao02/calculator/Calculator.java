@@ -6,7 +6,16 @@ package calculator;
  * 
  * Cada operação gasta 1 mA da bateria, que pode ser
  * recarregada pelo usuário.
+ *
+ * Todas as operações aritméticas envolvem números de ponto flutuante
+ * com precisão de duas casas decimais. Ou seja, caso o valor absoluto
+ * de algum resultado seja menor que 0.01 o valor é arrendondando para
+ * zero.
  * 
+ * Por exemplo, para uma operação de soma:
+ * 
+ * this.display = (Math.abs(a + b) < 0.01f) ? 0 : a + b;
+ *
  * Como essa classe está muito maior que a proposta pelo professor
  * um diagrama UML foi criado para facilitar a vizualização. Ele
  * se encontra na pasta "trabalho04_classes_aplicativos/questao02/uml".
