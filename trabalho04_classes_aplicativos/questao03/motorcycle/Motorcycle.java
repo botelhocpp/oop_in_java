@@ -68,7 +68,7 @@ public class Motorcycle {
             this.time += time;
         }
         else{
-            System.out.println("fail: tempo inválido");
+            System.err.println("fail: tempo inválido");
         }
     }
     
@@ -95,11 +95,11 @@ public class Motorcycle {
             return true;
         }
         else if(this.person != null){
-            System.out.println("fail: moto ocupada");
+            System.err.println("fail: moto ocupada");
             return false;
         }
         else{
-            System.out.println("fail: pessoa inexistente");
+            System.err.println("fail: pessoa inexistente");
             return false;
         }
     }
@@ -136,7 +136,7 @@ public class Motorcycle {
             return temporary;
         }
         else{
-            System.out.println("fail: moto vazia");
+            System.err.println("fail: moto vazia");
             return null;
         }
     }
@@ -159,18 +159,18 @@ public class Motorcycle {
                 this.time -= time;
             }
             else if(time < 1){
-                System.out.println("fail: tempo inválido");
+                System.err.println("fail: tempo inválido");
             }
             else{
-                System.out.printf("fail: andou %d min e acabou o tempo%n", this.time);
+                System.err.printf("fail: andou %d min e acabou o tempo%n", this.time);
                 this.time = 0;
             }
         }
         else if(this.person.getAge() > 10){
-            System.out.println("fail: muito grande para andar de moto");
+            System.err.println("fail: muito grande para andar de moto");
         }
         else{
-            System.out.println("fail: tempo zerado");
+            System.err.println("fail: tempo zerado");
         }
     }
    
@@ -191,7 +191,7 @@ public class Motorcycle {
             System.out.println("m");
         }
         else{
-            System.out.println("fail: moto vazia");
+            System.err.println("fail: moto vazia");
         }
     }
 

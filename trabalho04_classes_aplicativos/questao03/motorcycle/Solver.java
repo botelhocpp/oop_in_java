@@ -45,7 +45,7 @@ public class Solver{
                 motoca.honk();
             }
             else {
-                System.out.println("Comando invalido");
+                System.err.println("fail: comando invalido");
             }
         }
         scanner.close();

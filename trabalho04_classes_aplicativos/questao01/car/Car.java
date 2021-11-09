@@ -62,7 +62,7 @@ public class Car {
             this.passageiros++;
         }
         else{
-            System.out.println("fail: limite de pessoas atingido");
+            System.err.println("fail: limite de pessoas atingido");
         }
     }
 
@@ -75,7 +75,7 @@ public class Car {
             this.passageiros--;
         }
         else{
-            System.out.println("fail: nao ha ninguem no carro");
+            System.err.println("fail: nao ha ninguem no carro");
         }
     }
 
@@ -113,19 +113,19 @@ public class Car {
                 this.gas -= quilometros;
             }
             else{
-                System.out.printf("fail: tanque vazio apos andar %d km%n", this.gas);
+                System.err.printf("fail: tanque vazio apos andar %d km%n", this.gas);
                 this.quilometragem += this.gas;
                 this.gas = 0;
             }
         }
         else if(this.gas == 0){
-            System.out.println("fail: tanque vazio");
+            System.err.println("fail: tanque vazio");
         }
         else if(this.passageiros == 0){
-            System.out.println("fail: nao ha ninguem no carro");
+            System.err.println("fail: nao ha ninguem no carro");
         }
         else{
-            System.out.println("fail: tanque vazio e nao ha ninguem no carro");
+            System.err.println("fail: tanque vazio e nao ha ninguem no carro");
         }
     }
 

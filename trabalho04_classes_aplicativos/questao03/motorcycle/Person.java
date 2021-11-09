@@ -42,13 +42,13 @@ public class Person {
             this.age = (age >= 0) ? age : 0;
         }
         else if(age < 0){
-            System.out.println("fail: idade inválida");
+            System.err.println("fail: idade inválida");
         }
         else if(name != null){
-            System.out.println("fail: nome inválido");
+            System.err.println("fail: nome inválido");
         }
         else{
-            System.out.println("fail: nome e idade inválidos");
+            System.err.println("fail: nome e idade inválidos");
         }
     }
 

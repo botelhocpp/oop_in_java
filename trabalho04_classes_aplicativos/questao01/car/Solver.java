@@ -38,7 +38,7 @@ public class Solver {
                 car.fuel(Integer.parseInt(ui[1]));
             }
             else{
-                System.out.println("fail: comando invalido");
+                System.err.println("fail: comando invalido");
             }
         }
         scanner.close();
