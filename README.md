@@ -1,2 +1,2 @@
 # oop_in_java
-Codes written in Java language for the "Object-Oriented Programming" class.
+Códigos escritos em Java para a disciplina de "Programação Orientada a Objetos", na Universidade Federal do Ceará.
