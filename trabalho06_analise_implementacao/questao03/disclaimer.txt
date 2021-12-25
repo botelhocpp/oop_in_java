@@ -1,0 +1,21 @@
+Abaixo estão os métodos setters pedidos na questão.
+Os retirei do escopo da classe pois eles comprometem
+a integridade do sistema.
+
+    public void setAge(int age){
+        if(age < 0){
+            System.err.println("fail: valor de idade inválido.");
+        }
+        else{
+            this.age = age;
+        }
+    }
+
+    public void setName(String name){
+        if(name == null){
+            System.err.println("fail: nome inválido.");
+        }
+        else{
+            this.name = name;
+        }
+    }
